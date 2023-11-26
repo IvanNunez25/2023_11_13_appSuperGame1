@@ -1,24 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_023_11_13_appSuperGame1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👾 SuperGame 👾" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDo-Zw-ogd">
+                                <rect key="frame" x="16" y="79" width="361" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número del 0 al 9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwX-1i-kE4">
+                                <rect key="frame" x="16" y="232" width="361" height="34"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tiempo restante:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3k-iy-RrX">
+                                <rect key="frame" x="20" y="334" width="163" height="26"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresa un número" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N80-tA-PWH">
+                                <rect key="frame" x="101" y="155" width="191" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="cambioTexto:" destination="BYZ-38-t0r" eventType="editingChanged" id="Eve-Fe-LFB"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjD-MF-jlE">
+                                <rect key="frame" x="144" y="714" width="126" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play" catalog="system" imagePlacement="trailing" title="Jugar "/>
+                                <connections>
+                                    <action selector="botonJugar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NMY-4f-Loz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGS-9k-psf">
+                                <rect key="frame" x="16" y="783" width="100" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="memories" catalog="system" title="   Otro"/>
+                                <connections>
+                                    <action selector="botonOtro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J3s-Yu-LUE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkc-pI-1m9">
+                                <rect key="frame" x="310" y="783" width="67" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Adios"/>
+                                <connections>
+                                    <action selector="botonAdios:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8KJ-rp-Rnp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CU8-AV-31J">
+                                <rect key="frame" x="184" y="324" width="47" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubj-fJ-OWi">
+                                <rect key="frame" x="174" y="418" width="64" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Acertados:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVk-d6-fGW">
+                                <rect key="frame" x="73" y="422" width="93" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AGS-9k-psf" secondAttribute="bottom" constant="44" id="0Mq-cl-vut"/>
+                            <constraint firstItem="B3k-iy-RrX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4ln-TD-fAg"/>
+                            <constraint firstItem="N80-tA-PWH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="5U5-xt-KaF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N80-tA-PWH" secondAttribute="trailing" constant="122" id="6CS-Tg-FSm"/>
+                            <constraint firstItem="N80-tA-PWH" firstAttribute="top" secondItem="yDo-Zw-ogd" secondAttribute="bottom" constant="40" id="8Ht-zV-yRD"/>
+                            <constraint firstItem="ZjD-MF-jlE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="Dqq-qe-g5O"/>
+                            <constraint firstItem="yDo-Zw-ogd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="HkG-i0-rH8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZjD-MF-jlE" secondAttribute="bottom" constant="113" id="Hyh-iY-Zjj"/>
+                            <constraint firstItem="pkc-pI-1m9" firstAttribute="leading" secondItem="AGS-9k-psf" secondAttribute="trailing" constant="194" id="J1Q-GG-guV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZjD-MF-jlE" secondAttribute="trailing" constant="144" id="KLb-4I-bq9"/>
+                            <constraint firstItem="CU8-AV-31J" firstAttribute="leading" secondItem="B3k-iy-RrX" secondAttribute="trailing" constant="1" id="Kqg-KE-fNs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NwX-1i-kE4" secondAttribute="trailing" constant="37" id="LYf-gm-UUx"/>
+                            <constraint firstItem="CU8-AV-31J" firstAttribute="top" secondItem="NwX-1i-kE4" secondAttribute="bottom" constant="58" id="OgK-Q8-dCe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pkc-pI-1m9" secondAttribute="bottom" constant="44" id="RXM-sO-cAm"/>
+                            <constraint firstItem="B3k-iy-RrX" firstAttribute="top" secondItem="NwX-1i-kE4" secondAttribute="bottom" constant="68" id="RjF-zM-lcU"/>
+                            <constraint firstItem="NwX-1i-kE4" firstAttribute="top" secondItem="N80-tA-PWH" secondAttribute="bottom" constant="43" id="UKP-zM-ZF9"/>
+                            <constraint firstItem="NwX-1i-kE4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aME-aY-kbD"/>
+                            <constraint firstItem="CU8-AV-31J" firstAttribute="leading" secondItem="B3k-iy-RrX" secondAttribute="trailing" constant="1" id="ald-tn-zuL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yDo-Zw-ogd" secondAttribute="trailing" constant="37" id="bKG-sU-Svr"/>
+                            <constraint firstItem="ZjD-MF-jlE" firstAttribute="top" secondItem="CU8-AV-31J" secondAttribute="bottom" constant="344" id="dnz-ob-RGA"/>
+                            <constraint firstItem="yDo-Zw-ogd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="g8S-Jx-pGy"/>
+                            <constraint firstItem="AGS-9k-psf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iG9-f7-QqI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pkc-pI-1m9" secondAttribute="trailing" constant="37" id="njA-aH-aSN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CU8-AV-31J" secondAttribute="trailing" constant="183" id="q3A-Uf-sf0"/>
+                            <constraint firstItem="pkc-pI-1m9" firstAttribute="leading" secondItem="AGS-9k-psf" secondAttribute="trailing" constant="194" id="sBa-wR-LiF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelIntentos" destination="CU8-AV-31J" id="hbt-3H-eFh"/>
+                        <outlet property="textoMensaje" destination="NwX-1i-kE4" id="L76-LW-N9o"/>
+                        <outlet property="textoNum" destination="N80-tA-PWH" id="aMn-f0-Bsi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139.13043478260872" y="3.3482142857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="memories" catalog="system" width="128" height="112"/>
+        <image name="play" catalog="system" width="117" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

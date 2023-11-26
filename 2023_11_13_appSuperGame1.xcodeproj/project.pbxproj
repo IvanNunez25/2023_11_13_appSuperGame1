@@ -13,6 +13,7 @@
 		E68CB1482B028A3000C4811F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68CB1462B028A3000C4811F /* Main.storyboard */; };
 		E68CB14A2B028A3200C4811F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68CB1492B028A3200C4811F /* Assets.xcassets */; };
 		E68CB14D2B028A3200C4811F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68CB14B2B028A3200C4811F /* LaunchScreen.storyboard */; };
+		E6B11B9B2B140EB200EA5B46 /* GifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B11B9A2B140EB200EA5B46 /* GifLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E68CB1492B028A3200C4811F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E68CB14C2B028A3200C4811F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E68CB14E2B028A3200C4811F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6B11B9A2B140EB200EA5B46 /* GifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				E68CB1442B028A3000C4811F /* ViewController.swift */,
 				E68CB1462B028A3000C4811F /* Main.storyboard */,
 				E68CB1492B028A3200C4811F /* Assets.xcassets */,
+				E6B11B9A2B140EB200EA5B46 /* GifLoader.swift */,
 				E68CB14B2B028A3200C4811F /* LaunchScreen.storyboard */,
 				E68CB14E2B028A3200C4811F /* Info.plist */,
 			);
@@ -141,6 +144,7 @@
 				E68CB1452B028A3000C4811F /* ViewController.swift in Sources */,
 				E68CB1412B028A3000C4811F /* AppDelegate.swift in Sources */,
 				E68CB1432B028A3000C4811F /* SceneDelegate.swift in Sources */,
+				E6B11B9B2B140EB200EA5B46 /* GifLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
