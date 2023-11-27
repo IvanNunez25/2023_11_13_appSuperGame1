@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var textoMensaje: UILabel!
     @IBOutlet weak var labelIntentos: UILabel!
     
+    @IBOutlet weak var imageView_gif: UIImageView!
+    
     var numeroRandom = 0
     var intentos = 0
     var acertados = 0
@@ -58,6 +60,8 @@ class ViewController: UIViewController {
     @objc func action() {
         time -= 1
         labelIntentos.text = String(time)
+        
+        
     }
     
     func alerta() {
@@ -101,6 +105,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+//        let fuegoGif = UIImage.gifImageWithName("fire-51")
+//        imageView_gif.image = fuegoGif
+        
+        imageView_gif.loadGif(name: "fire-51")
+        
         
         inicializar()
     }

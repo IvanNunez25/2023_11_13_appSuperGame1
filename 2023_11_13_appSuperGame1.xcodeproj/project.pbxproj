@@ -14,6 +14,9 @@
 		E68CB14A2B028A3200C4811F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68CB1492B028A3200C4811F /* Assets.xcassets */; };
 		E68CB14D2B028A3200C4811F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68CB14B2B028A3200C4811F /* LaunchScreen.storyboard */; };
 		E6B11B9B2B140EB200EA5B46 /* GifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B11B9A2B140EB200EA5B46 /* GifLoader.swift */; };
+		E6B11B9F2B1412D900EA5B46 /* fire-51.gif in Resources */ = {isa = PBXBuildFile; fileRef = E6B11B9E2B1412D900EA5B46 /* fire-51.gif */; };
+		E6B11BA12B14181F00EA5B46 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B11BA02B14181F00EA5B46 /* ViewController2.swift */; };
+		E6B11BA32B14197400EA5B46 /* fire-102.gif in Resources */ = {isa = PBXBuildFile; fileRef = E6B11BA22B14197400EA5B46 /* fire-102.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		E68CB14C2B028A3200C4811F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E68CB14E2B028A3200C4811F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6B11B9A2B140EB200EA5B46 /* GifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifLoader.swift; sourceTree = "<group>"; };
+		E6B11B9E2B1412D900EA5B46 /* fire-51.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "fire-51.gif"; path = "../../../../Downloads/fire-51.gif"; sourceTree = "<group>"; };
+		E6B11BA02B14181F00EA5B46 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		E6B11BA22B14197400EA5B46 /* fire-102.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "fire-102.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,12 @@
 		E68CB13F2B028A3000C4811F /* 2023_11_13_appSuperGame1 */ = {
 			isa = PBXGroup;
 			children = (
+				E6B11B9E2B1412D900EA5B46 /* fire-51.gif */,
+				E6B11BA22B14197400EA5B46 /* fire-102.gif */,
 				E68CB1402B028A3000C4811F /* AppDelegate.swift */,
 				E68CB1422B028A3000C4811F /* SceneDelegate.swift */,
 				E68CB1442B028A3000C4811F /* ViewController.swift */,
+				E6B11BA02B14181F00EA5B46 /* ViewController2.swift */,
 				E68CB1462B028A3000C4811F /* Main.storyboard */,
 				E68CB1492B028A3200C4811F /* Assets.xcassets */,
 				E6B11B9A2B140EB200EA5B46 /* GifLoader.swift */,
@@ -128,6 +137,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B11B9F2B1412D900EA5B46 /* fire-51.gif in Resources */,
+				E6B11BA32B14197400EA5B46 /* fire-102.gif in Resources */,
 				E68CB14D2B028A3200C4811F /* LaunchScreen.storyboard in Resources */,
 				E68CB14A2B028A3200C4811F /* Assets.xcassets in Resources */,
 				E68CB1482B028A3000C4811F /* Main.storyboard in Resources */,
@@ -141,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B11BA12B14181F00EA5B46 /* ViewController2.swift in Sources */,
 				E68CB1452B028A3000C4811F /* ViewController.swift in Sources */,
 				E68CB1412B028A3000C4811F /* AppDelegate.swift in Sources */,
 				E68CB1432B028A3000C4811F /* SceneDelegate.swift in Sources */,
